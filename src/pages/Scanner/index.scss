@@ -1,0 +1,52 @@
+.scanner {
+  position: relative;
+  color: #333;
+  .title {
+    color: red;
+    display: absolute;
+    top: 0;
+    user-select: none;
+    &.scaning {
+      opacity: 0.5;
+    }
+  }
+
+  #vplayer {
+    width: 100%;
+  }
+  #canshot {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    .camera {
+      height: 1.5em;
+      line-height: 1.5em;
+      text-align: center;
+      padding: 0 1em;
+      border: 1px solid gray;
+      border-radius: 0.4em;
+
+      &.active {
+        color: white;
+        background-color: green;
+      }
+    }
+  }
+  .continue {
+    text-align: center;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    border: 2px solid yellow;
+    z-index: 10;
+  }
+}
